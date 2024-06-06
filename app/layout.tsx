@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Student App",
-  description: "Student App",
+  title: "NMIT CSE",
+  description: "NMIT CSE Deparment",
 };
 
 export default function RootLayout({

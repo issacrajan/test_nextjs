@@ -36,11 +36,9 @@ export default function LoginForm() {
       <Card className="w-4/12 max-w-sm">
         <CardHeader>
           <div className="flex gap-4">
-            <div className="text-2xl ">Login
-            </div>
-            <Select onValueChange={LoginAsChanged}>
+            <Select defaultValue='Student' onValueChange={LoginAsChanged}>
               <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Login as..." />
+                <SelectValue  placeholder="Login as..." />
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
@@ -51,8 +49,10 @@ export default function LoginForm() {
                 </SelectGroup>
               </SelectContent>
             </Select>
+            <div className="text-2xl ">Login
+            </div>
           </div>
-          <CardDescription>
+          <CardDescription className="mt-16">
             Enter {loginAs} email below to login to your account.
           </CardDescription>
         </CardHeader>
