@@ -35,43 +35,6 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col min-h-screen w-full">
-      <div className="flex justify-between h-full max-h-screen border-b gap-10">
-        <div className="flex h-14 items-center  px-4 ">
-          <Link href="/" className="flex items-center gap-2 font-semibold">
-            {/* <Package2 className="h-6 w-6" /> */}
-            <Image
-            src="/header_logo.jpeg"
-            width={100}
-            height={60}
-            className="hidden md:block"
-            alt="NMIT"
-          />
-            <span className="text-2xl">CSE Department</span>
-          </Link>
-        </div>
-        <div className="flex flex-col items-center">
-          <h1 className="text-lg font-semibold md:text-2xl">Welcome Abc</h1>
-          <p className="text-sm text-left text-muted-foreground">
-            Admin
-          </p>
-        </div>
-        <div className="mr-6">
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="secondary" size="icon" className="rounded-full">
-                <CircleUser className="h-5 w-5" />
-                <span className="sr-only">Toggle user menu</span>
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              <DropdownMenuLabel>My Profile</DropdownMenuLabel>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem>Logout</DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-        </div>
-      </div>
 
       <div className="flex mt-6 gap-4">
         <div >
@@ -102,10 +65,10 @@ export default function HomePage() {
         </div>
         <div className="w-full">
           <div className="flex items-center">
-            <h1 className="text-lg font-semibold md:text-lg">Student Info</h1>
+            <h1 className="text-lg text-orange-950 font-semibold md:text-lg">Student Info</h1>
           </div>
           <div
-            className="flex rounded-lg border gap-8 p-4 mr-6 shadow-sm" x-chunk="dashboard-02-chunk-1"
+            className="grid grid-cols-3 rounded-lg border gap-8 p-4 mr-6 shadow-sm" x-chunk="dashboard-02-chunk-1"
           >
             <div className="flex flex-col gap-1">
               <h3 className="text-sm font-bold tracking-tight">
@@ -180,11 +143,11 @@ export default function HomePage() {
               </p>
             </div>
           </div>
-          <div className="flex items-center">
-            <h1 className="text-lg font-semibold md:text-lg">Parent's Info</h1>
+          <div className="flex items-center mt-8">
+            <h1 className="text-lg font-semibold md:text-lg">Parent&#39;s Info</h1>
           </div>
           <div
-            className="flex rounded-lg border gap-8 p-4 mr-6 shadow-sm" x-chunk="dashboard-02-chunk-1"
+            className="grid grid-cols-2 rounded-lg border gap-8 p-4 mr-6 shadow-sm" x-chunk="dashboard-02-chunk-1"
           >
             <div className="flex flex-col gap-1">
               <h3 className="text-sm font-bold tracking-tight">
@@ -229,8 +192,6 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-
-
-    </div>
+    
   )
 }
