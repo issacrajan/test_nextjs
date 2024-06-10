@@ -64,7 +64,7 @@ export default function RootLayout({
         <div className="flex flex-col items-center">
           <h1 className="text-lg font-semibold md:text-2xl">Welcome Abc</h1>
           <div className="flex items-start">
-            <p className="text-end text-muted-foreground">Admin</p>
+            <p className="text-end text-muted-foreground">Asst. Professor</p>
           </div>
         </div>
         <div className="mr-6">
